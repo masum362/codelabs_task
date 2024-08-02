@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nettracking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors:{
+                        backgroundColor:"var(--background-color)",
+                        secondaryColor:"var(--secondary-color)",
+                        textColor:"var(--text-color)",
+                        themeColor:"var(--theme-color)",
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar" class=" bg-backgroundColor w-full fixed transition-all duration-150 top-0 left-0 px-2 sm:px-4 lg:px-24 py-4 flex items-center justify-between">
+            <div class="flex items-center justify-center gap-2">
+                <h1 class="text-lg font-bold">Nettracking</h1>
+
+                <label class="inline-flex items-center cursor-pointer relative">
+                    <input type="checkbox" value="" class="sr-only peer" id="toggleBtn" checked>
+                    <div
+                        class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700   dark:border-gray-600 peer-checked:bg-gray-600 ">
+
+                    </div>
+                    <i
+                        class="fa-solid fa-moon absolute top-[2px] start-[2px] border rounded-full h-5 w-5 transition-all dark:border-gray-600  text-black flex items-center justify-center bg-white peer-checked:bg-gray-900 peer-checked:text-white peer-checked:translate-x-full rtl:peer-checked:-translate-x-full"></i>
+                </label>
+
+            </div>
+            <ul class=" hidden lg:flex items-center justify-center gap-4 text-secondaryColor">
+                <li><a href="#" class="active">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#howtowork">How to work</a></li>
+                <li><a href="#knowladge_base">Knowledge base</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <ul
+                class="hidden flex-col lg:hidden items-start gap-1 text-textColor absolute top-0 right-0 -translate-x-10 translate-y-10 transition-all duration-150 bg-secondaryColor p-2 rounded-lg" id="small-menu">
+                <li class="hover:bg-slate-400 w-full rounded-md px-2 "><a href="#" class="active">Features</a></li>
+                <li class="hover:bg-slate-400 w-full rounded-md px-2 "><a href="#pricing">Pricing</a></li>
+                <li class="hover:bg-slate-400 w-full rounded-md px-2 "><a href="#howtowork">How to work</a></li>
+                <li class="hover:bg-slate-400 w-full rounded-md px-2 "><a href="#knowladge_base">Knowledge base</a></li>
+                <li class="hover:bg-slate-400 w-full rounded-md px-2 "><a href="#faq">FAQ</a></li>
+                <div class="flex items-center gap-4 font-semibold">
+                    <button class="px-4 py-2 bg-secondaryColor text-textColor rounded-md border">Sign In</button>
+                    <button class="px-4 py-2 text-backgroundColor bg-textColor rounded-md">Sign Up</button>
+                </div>
+            </ul>
+            <div class="hidden lg:flex items-center gap-4 font-semibold ">
+                <button class="px-4 py-2 bg-secondaryColor text-textColor rounded-md">Sign In</button>
+                <button class="px-4 py-2 text-backgroundColor bg-textColor rounded-md">Sign Up</button>
+            </div>
+            <span class="block lg:hidden">
+                <i class="fa fa-bars fa-solid " id="bar-icon"></i>
+            </span>
+        </nav>
+    </header>
+
+
+<script src="./script.js"></script>
+</body>
+
+</html>

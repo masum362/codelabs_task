@@ -1,0 +1,33 @@
+:root {
+    --background-color: #12141D;
+    --secondary-color: #808188;
+    --text-color: white;
+    --theme-color: #FF664F;
+}
+
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+:root[data-theme="light"] {
+    --background-color: #F2F2F2;
+    /* Light gray background */
+    --secondary-color: #A0A1A8;
+    /* Lighter shade of gray for secondary elements */
+    --text-color: #333333;
+    /* Dark gray text for good contrast */
+    --theme-color: #FFB3A4;
+    /* Softened version of the dark mode theme color */
+
+}
+
+.active{
+    color: var(--text-color);
+}
+
